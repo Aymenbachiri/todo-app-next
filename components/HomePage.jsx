@@ -29,7 +29,6 @@ export default async function HomePage() {
   };
 
   const { tasks } = await getTasks();
-  console.log(tasks);
 
   return (
     <div className="h-screen w-screen p-4 bg-gradient-to-r from-[#2F80ED] to-[#1CB5E0]">
