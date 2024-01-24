@@ -2,9 +2,10 @@ import Form from "./Form";
 import TaskCard from "./TaskCard";
 
 export default async function HomePage() {
+  const api_url = process.env.API_URL;
   const getTasks = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/Tasks", {
+      const res = await fetch(`${api_url}/api/Tasks`, {
         cache: "no-store",
       });
       // Check if the response status is okay
